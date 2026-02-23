@@ -40,7 +40,7 @@ export default function LoginPage() {
       // 🔹 Redirecionamento baseado no role
       switch (data.user.role) {
         case "ADMIN":
-          router.push("/admin/list-cadidato");
+          router.push("/admin");
           break;
         case "PROFESSOR":
           router.push(`/professor/${data.user.id}`);
