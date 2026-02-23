@@ -46,17 +46,6 @@ export default function Sidebar() {
   // 📌 ROTAS COM PERMISSÃO POR ITEM
   const routes = [
     {
-      section: "Painel",
-      items: [
-        {
-          nome: "Dashboard",
-          icone: <BarChart3 />,
-          href: "/admin",
-          roles: ["ADMIN"],
-        },
-      ],
-    },
-    {
       section: "Gestão Acadêmica",
       items: [
         {
