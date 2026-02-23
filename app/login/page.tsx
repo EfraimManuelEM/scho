@@ -42,9 +42,6 @@ export default function LoginPage() {
         case "ADMIN":
           router.push("/admin/list-cadidato");
           break;
-        case "PROFESSOR":
-          router.push(`/professor/${data.user.id}`);
-          break;
         case "ASSISTENTE":
           router.push("/admin/list-cadidato");
           break;

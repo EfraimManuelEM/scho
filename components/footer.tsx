@@ -101,13 +101,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {contact.map((item, i) => (
                 <li key={i}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-sm text-gray-400 hover:text-primary transition-colors flex items-center gap-2 group"
                   >
                     <span className="text-gray-500 group-hover:text-primary transition-colors">{item.icon}</span>
                     {item.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
