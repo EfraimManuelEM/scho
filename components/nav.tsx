@@ -98,14 +98,14 @@ export default function Nav() {
             ))}
 
             {/* Botão Download PDF no mobile */}
-            <a
+            <Link
               href="/topicos.pdf"
               download
               onClick={handleLinkClick}
               className="block w-full text-center bg-transparent border border-primary text-primary px-4 py-2 rounded-md hover:bg-primary hover:text-white transition-colors font-medium"
             >
               Baixar Tópicos
-            </a>
+            </Link>
 
             {/* Botão Exame Mobile */}
             <Link href="/exame" onClick={handleLinkClick}>
