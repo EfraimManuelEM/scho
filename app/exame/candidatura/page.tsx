@@ -5,7 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { LoaderCircle } from "lucide-react";
+import { LoaderCircle, ToggleRight } from "lucide-react";
 
 interface Curso {
   id: string;
@@ -56,7 +56,7 @@ export default function Candidatura() {
         const res = await axios.get("http://localhost:3333/curso"); // supondo que exista /api/curso
         setCursos(res.data);
       } catch (err) {
-        console.error("Erro ao buscar cursos", err);
+        toast.error("Erro ao buscar cursos");
       }
     };
     fetchCursos();
@@ -80,8 +80,8 @@ export default function Candidatura() {
         toast.success("Candidato criado com sucesso!")
 
         router.push("/");
-      } catch (error: any) {
-        toast.error(error.response?.data?.error || "Erro ao cadastrar candidato!");
+      } catch (err) {
+        toast.error( "Erro ao cadastrar candidato!");
       } 
       finally {
         setLoading(false);
