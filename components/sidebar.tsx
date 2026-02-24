@@ -6,7 +6,6 @@ import {
   X,
   Users,
   LogOut,
-  BarChart3,
   DollarSign,
   Briefcase,
   ClipboardList,
