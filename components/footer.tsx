@@ -47,7 +47,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3 pt-2">
               {socialMedia.map((item, i) => (
-                <a
+                <Link
                   key={i}
                   href={item.path}
                   target="_blank"
@@ -56,7 +56,7 @@ export default function Footer() {
                   aria-label={item.name}
                 >
                   {item.icon}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
