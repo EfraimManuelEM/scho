@@ -58,13 +58,13 @@ export default function Nav() {
             ))}
 
             {/* Botão de Download de PDF */}
-            <a
+            <Link
               href="/topicos.pdf"
               download
               className="text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               Baixar Tópicos
-            </a>
+            </Link>
 
             {/* Botão Exame */}
             <Link href="/exame/loginC">

@@ -1,5 +1,6 @@
 import Nav from "@/components/nav"
 import { Calendar, Clock, FileText, Users, CheckCircle, Award } from "lucide-react"
+import Link from "next/link"
 
 export default function Calendario() {
   const timelineEvents = [
@@ -181,18 +182,18 @@ export default function Calendario() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para se candidatar?</h2>
           <p className="text-lg mb-8 opacity-90">Não perca os prazos. Inicie sua candidatura hoje mesmo.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/informacoes"
               className="inline-flex items-center justify-center px-6 py-3 bg-background text-foreground rounded-lg font-semibold hover:bg-background/90 transition-colors"
             >
               Ver Regulamento
-            </a>
-            <a
+            </Link>
+            <Link
               href="/exame"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary-foreground/10 backdrop-blur-sm text-primary-foreground rounded-lg font-semibold hover:bg-primary-foreground/20 transition-colors border border-primary-foreground/20"
             >
               Consultar Resultados
-            </a>
+            </Link>
           </div>
         </div>
       </section>

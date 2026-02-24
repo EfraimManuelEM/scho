@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CircleUserRoundIcon, LogOutIcon } from "lucide-react";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -106,12 +107,12 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <a
+          <Link
             href="/"
             className="mt-6 flex items-center gap-2 text-white hover:underline hover:text-gray-100 transition"
           >
             <LogOutIcon size={18} /> Voltar à página inicial
-          </a>
+          </Link>
         </div>
       </div>
     </main>

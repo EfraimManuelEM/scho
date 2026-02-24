@@ -2,6 +2,7 @@ import Nav from "@/components/nav"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { BookOpen, Clock, FileText, GraduationCap, Users, Calendar } from "lucide-react"
+import Link from "next/link"
 
 export default function Informacoes() {
 const courses = [
@@ -172,12 +173,12 @@ return (
             </CardDescription>
             </CardHeader>
             <CardContent className="flex justify-center">
-            <a
+            <Link
                 href="/exame"
                 className="inline-flex items-center justify-center rounded-md bg-background text-foreground px-8 py-3 font-semibold hover:bg-background/90 transition-colors"
             >
                 Consultar Resultados
-            </a>
+            </Link>
             </CardContent>
         </Card>
         </div>
