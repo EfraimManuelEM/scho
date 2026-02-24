@@ -5,7 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { LoaderCircle, ToggleRight } from "lucide-react";
+import { LoaderCircle } from "lucide-react";
 
 interface Curso {
   id: string;
